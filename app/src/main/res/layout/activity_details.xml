@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    tools:context=".Activitiler.DetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/detailsActivityBgColor"
+        android:padding="15dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:id="@+id/detailsActivity_ImageView"></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ülke Adı:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detailsActivity_txtUlkeAdi"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ülke Başkenti:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detailsActivity_txtUlkeBaskenti"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ülke Hakkında:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detailsActivity_txtUlkeHakkinda"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

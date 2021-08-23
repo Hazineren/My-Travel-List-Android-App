@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Activitiler.AddCountryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@color/ulkeEkleArkaPlan"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:id="@+id/ulkeBilgileri"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                android:onClick="resimSec"
+                android:id="@+id/ulkeAnaResmi"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_photoadd"
+                ></ImageView>
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/custom_input"
+                android:id="@+id/editTxtulkeIsmi"
+                android:textAlignment="center"
+                android:hint="Ülke İsmini Giriniz"
+                ></EditText>
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:id="@+id/editTxtulkeBaskenti"
+                android:textAlignment="center"
+                android:hint="Ülkenin Başkenti"
+                ></EditText>
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:inputType="textMultiLine"
+                android:id="@+id/editTxtulkeHakkinda"
+                android:textAlignment="center"
+                android:hint="Ülke Hakkındaki Görüşleriniz"
+                ></EditText>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cBoxResimYukle"
+                android:background="@drawable/custom_input"
+                android:backgroundTint="@color/cboxArkaPlan"
+                android:text="Daha Fazla Fotoğraf Yükle"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"></CheckBox>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/morePhotos"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/photo1"
+                        android:scaleType="fitXY"
+                        android:onClick="resimSec"
+                        android:enabled="false"
+                        android:src="@drawable/ic_photoadd"
+                        ></ImageView>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/photo2"
+                        android:scaleType="fitXY"
+                        android:onClick="resimSec"
+                        android:enabled="false"
+                        android:src="@drawable/ic_photoadd"
+                        android:layout_marginLeft="4dp"
+                        ></ImageView>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY"
+                        android:id="@+id/photo3"
+                        android:onClick="resimSec"
+                        android:enabled="false"
+                        android:src="@drawable/ic_photoadd"
+                        android:layout_marginLeft="4dp"
+                        ></ImageView>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY"
+                        android:id="@+id/photo4"
+                        android:onClick="resimSec"
+                        android:enabled="false"
+                        android:src="@drawable/ic_photoadd"
+                        android:layout_marginLeft="4dp"
+                        ></ImageView>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY"
+                        android:id="@+id/photo5"
+                        android:onClick="resimSec"
+                        android:enabled="false"
+                        android:src="@drawable/ic_photoadd"
+                        android:layout_marginLeft="4dp"
+                        ></ImageView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnUlkeKaydet"
+                android:text="Kaydet"
+                android:onClick="ulkeKaydet"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"></Button>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
